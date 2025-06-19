@@ -1,3 +1,10 @@
+Currently building a smart rental dashboard that gives landlords live updates, full control, and zero stress.
+- Modern rental management platform with live updates and streamlined landlord tools.
+- Built a property rental dashboard for landlords to track tenants, rent, and compliance in real time.
+- Rent out smarter — full control, zero stress, without having to involve middle-manager and their fees.
+- Keep a great overlook over your apartment without calling your tenant managers every time. 
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
