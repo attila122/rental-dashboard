@@ -1,5 +1,5 @@
-import RentalDashboard from '../components/RentalDashboard';
+import AppWithAuth from '../components/AppWithAuth';
 
 export default function Home() {
-  return <RentalDashboard />;
+  return <AppWithAuth />;
 }
