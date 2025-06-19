@@ -4,6 +4,7 @@ Currently building a smart rental dashboard that gives landlords live updates, f
 - Rent out smarter — full control, zero stress, without having to involve middle-manager and their fees.
 - Keep a great overlook over your apartment without calling your tenant managers every time. 
 
+Run the app here! rental-dashboard-nine.vercel.app
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
