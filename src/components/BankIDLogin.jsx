@@ -169,15 +169,20 @@ export default function BeautifulBankIDLogin({ onLoginSuccess }) {
               </div>
             </div>
 
-            {/* Hero Image Placeholder */}
+            {/* Hero Image */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <div className="h-64 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 relative">
+              <div className="h-64 relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&w=800&q=80" 
+                  alt="Elegant Stockholm apartment living room" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white">
                     <Building2 className="h-16 w-16 mx-auto mb-4 opacity-90" />
-                    <h3 className="text-xl font-bold mb-2">Statusuppdatering och verktyg för hyresvärdar</h3>
-                    <p className="text-sm opacity-90">Få uppdatering i real-tid om din uthyrda lägenhet!</p>
+                    <h3 className="text-xl font-bold mb-2">Moderna Stockholmslägenheter</h3>
+                    <p className="text-sm opacity-90">Premium fastigheter i hjärtat av Stockholm</p>
                   </div>
                 </div>
                 {/* Floating elements for visual appeal */}

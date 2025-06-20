@@ -293,7 +293,12 @@ export default function BeautifulRentalDashboard() {
 
         {/* Featured Property Image */}
         <Card className="mb-8 shadow-2xl border-0 rounded-3xl overflow-hidden bg-white/80 backdrop-blur-sm">
-          <div className="relative h-64 bg-gradient-to-r from-blue-600 to-purple-600">
+          <div className="relative h-64">
+            <img 
+              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&w=800&q=80" 
+              alt="Modern Stockholm apartment" 
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center text-white">
