@@ -10,9 +10,8 @@ export default function FastighetsportalenLanding() {
   const [email, setEmail] = useState('');
 
   const handleDemoClick = () => {
-    // Navigate to dashboard demo
-    window.location.href = '/';
-  };
+  window.location.href = '/dashboard';  // Now goes to /dashboard
+};
 
   const handleSubmit = (e) => {
     e.preventDefault();
