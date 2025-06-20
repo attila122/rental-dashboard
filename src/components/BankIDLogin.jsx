@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Smartphone, Shield, Loader2, Crown, CheckCircle } from "lucide-react";
+import { Smartphone, Shield, Loader2, Building2, CheckCircle, QrCode } from "lucide-react";
 
 export default function SimpleBankIDLogin({ onLoginSuccess }) {
   const [isLoading, setIsLoading] = useState(false);
@@ -96,7 +96,7 @@ export default function SimpleBankIDLogin({ onLoginSuccess }) {
             <div>
               <h3 className="text-xl font-bold text-green-700 mb-2">Inloggning lyckades! ✅</h3>
               <p className="text-gray-600 text-sm">
-                Välkommen till Fastighetsportalen...
+                Välkommen till Hyra tryggt...
               </p>
             </div>
           </div>
@@ -105,46 +105,35 @@ export default function SimpleBankIDLogin({ onLoginSuccess }) {
       default:
         return (
           <div className="text-center space-y-8">
-            {/* Logo */}
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="p-3 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg">
-                <Crown className="h-8 w-8 text-white" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Fastighetsportalen
-                </h1>
-              </div>
-            </div>
-
             {/* BankID Icon */}
-            <div className="mx-auto">
-              <div className="h-20 w-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Smartphone className="h-10 w-10 text-white" />
+            <div className="mx-auto mb-6 mt-4">
+              <div className="h-16 w-16 bg-gray-800 rounded-xl flex items-center justify-center mx-auto shadow-sm">
+                <QrCode className="h-8 w-8 text-white" />
               </div>
             </div>
 
             {/* Title */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-3">Logga in med BankID</h2>
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">Logga in med BankID</h2>
+              <p className="text-gray-600 text-center">Säker och enkel inloggning</p>
             </div>
 
             {/* Login Button */}
             <Button 
               onClick={startBankIDLogin}
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 text-lg rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 text-base rounded-xl shadow-sm transition-colors"
             >
               {isLoading ? (
-                <Loader2 className="mr-3 h-5 w-5 animate-spin" />
+                <Loader2 className="mr-2 h-5 w-5 animate-spin" />
               ) : (
-                <Smartphone className="mr-3 h-5 w-5" />
+                <QrCode className="mr-2 h-5 w-5" />
               )}
               Logga in med BankID
             </Button>
 
             {/* Simple footer */}
-            <p className="text-xs text-gray-500 mt-6">
+            <p className="text-xs text-gray-500 mt-6 text-center">
               Säker inloggning med svensk BankID-teknik
             </p>
           </div>
@@ -153,9 +142,9 @@ export default function SimpleBankIDLogin({ onLoginSuccess }) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
-        <Card className="shadow-2xl border-0 rounded-3xl bg-white/90 backdrop-blur-md">
+        <Card className="shadow-lg border border-gray-200 rounded-2xl bg-white">
           <CardContent className="p-8">
             {renderContent()}
           </CardContent>
