@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -10,8 +8,9 @@ export default function FastighetsportalenLanding() {
   const [email, setEmail] = useState('');
 
   const handleDemoClick = () => {
-  window.location.href = '/dashboard';  // Now goes to /dashboard
-};
+    // Navigate to dashboard demo
+    window.location.href = '/';
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,7 +31,7 @@ export default function FastighetsportalenLanding() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Fastighetsportalen
+                                      Hyra tryggt
                 </h1>
                 <div className="flex items-center gap-1">
                   <Sparkles className="h-3 w-3 text-yellow-500" />
@@ -41,11 +40,8 @@ export default function FastighetsportalenLanding() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <Button variant="outline" onClick={handleDemoClick}>
-                Testa Demo
-              </Button>
-              <Button>
-                Kom igång
+              <Button onClick={handleDemoClick}>
+                Logga in
               </Button>
             </div>
           </div>
@@ -86,15 +82,7 @@ export default function FastighetsportalenLanding() {
                   className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg rounded-xl shadow-lg"
                 >
                   <BarChart3 className="mr-2 h-5 w-5" />
-                  Testa Live Demo
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="px-8 py-4 text-lg rounded-xl border-2"
-                >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Boka 15-min demo
+                  Try Demo
                 </Button>
               </div>
 
@@ -119,8 +107,8 @@ export default function FastighetsportalenLanding() {
               <Card className="shadow-2xl border-0 rounded-3xl overflow-hidden bg-white/90 backdrop-blur-sm">
                 <div className="relative h-80">
                   <img 
-                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&w=800&q=85" 
-                    alt="Modern Stockholm apartment dashboard preview"
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&w=800&q=85" 
+                    alt="Modern Stockholm building exterior"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -332,7 +320,7 @@ export default function FastighetsportalenLanding() {
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 text-lg rounded-xl"
             >
               <BarChart3 className="mr-2 h-5 w-5" />
-              Testa Live Demo Nu
+              Try Demo
             </Button>
             <div className="flex gap-2">
               <input
@@ -375,9 +363,9 @@ export default function FastighetsportalenLanding() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600">
-                  <Crown className="h-5 w-5 text-white" />
+                  <Building2 className="h-5 w-5 text-white" />
                 </div>
-                <span className="text-xl font-bold">Fastighetsportalen</span>
+                <span className="text-xl font-bold">                  Hyra tryggt</span>
               </div>
               <p className="text-gray-400">
                 Modern fastighetshantering för svenska fastighetsägare.
@@ -416,7 +404,7 @@ export default function FastighetsportalenLanding() {
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Fastighetsportalen. Alla rättigheter förbehållna.</p>
+                          <p>&copy; 2025 Hyra tryggt. Alla rättigheter förbehållna.</p>
           </div>
         </div>
       </footer>
