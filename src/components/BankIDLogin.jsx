@@ -176,8 +176,8 @@ export default function BeautifulBankIDLogin({ onLoginSuccess }) {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white">
                     <Building2 className="h-16 w-16 mx-auto mb-4 opacity-90" />
-                    <h3 className="text-xl font-bold mb-2">Moderna Stockholmslägenheter</h3>
-                    <p className="text-sm opacity-90">Premium fastigheter i hjärtat av Stockholm</p>
+                    <h3 className="text-xl font-bold mb-2">Statusuppdatering och verktyg för hyresvärdar</h3>
+                    <p className="text-sm opacity-90">Få uppdatering i real-tid om din uthyrda lägenhet!</p>
                   </div>
                 </div>
                 {/* Floating elements for visual appeal */}
@@ -193,7 +193,7 @@ export default function BeautifulBankIDLogin({ onLoginSuccess }) {
             {/* Taglines */}
             <div className="space-y-6">
               <div className="space-y-3">
-                <h2 className="text-2xl font-bold text-gray-900">🧠 Professional Platform</h2>
+                <h2 className="text-2xl font-bold text-gray-900">🧠 Chat with your renter directly and vice-versa</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
                   Modern rental management platform with live updates and streamlined landlord tools.
                 </p>

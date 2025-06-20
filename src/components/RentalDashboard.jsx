@@ -279,7 +279,7 @@ export default function BeautifulRentalDashboard() {
                 <Crown className="h-8 w-8 text-white" />
               </div>
               <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Fastighetsportal
+                Fastighetsportalen
               </h1>
               <Sparkles className="h-6 w-6 text-yellow-500" />
             </div>
