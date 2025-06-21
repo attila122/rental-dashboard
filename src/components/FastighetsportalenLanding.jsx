@@ -195,8 +195,8 @@ export default function FastighetsportalenLanding() {
       <section className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Enkel prissättning som funkar</h2>
-            <p className="text-xl text-gray-600">Välj det paket som passar din situation</p>
+            <h2 className="text-4xl font-bold mb-4">Transparent prissättning - inga doldar avgifter</h2>
+            <p className="text-xl text-gray-600">Välj det paket som passar din situation bäst</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
