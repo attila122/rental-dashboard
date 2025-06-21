@@ -10,9 +10,9 @@ export default function FastighetsportalenLanding() {
   const [email, setEmail] = useState('');
 
   const handleDemoClick = () => {
-    // Navigate to dashboard demo
-    window.location.href = '/';
-  };
+  // Navigate to dashboard demo
+  window.location.href = '/dashboard';  // Change from '/' to '/dashboard'
+};
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -312,7 +312,7 @@ export default function FastighetsportalenLanding() {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl font-bold">Redo att modernisera din fastighetshantering?</h2>
           <p className="text-xl opacity-90">
-            Gå med i 100+ svenska fastighetsägare som redan kör smart med Fastighetsportalen
+            Gå med i 100+ svenska fastighetsägare som redan kör smart med Hyra tryggt
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
